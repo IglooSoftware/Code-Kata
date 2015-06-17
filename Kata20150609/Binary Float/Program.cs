@@ -6,12 +6,12 @@ using System.Text.RegularExpressions;
 namespace Binary_Float {
 	class Program {
 		/*
-            Given a binary string containing a fractional part your task is to print to the standard output its numeric value (as a float).
-            Example input:
-            s: 100.0011
-            Example output:
-            4.1875
-        */
+			Given a binary string containing a fractional part your task is to print to the standard output its numeric value (as a float).
+			Example input:
+			s: 100.0011
+			Example output:
+			4.1875
+		*/
 
 		public static double print_float(string s) // Matthew's solution
 		{
@@ -28,7 +28,7 @@ namespace Binary_Float {
 
 			double divisor = 0.5;
 			foreach (char c in fractionPart) {
-				if (c == '1') 
+				if (c == '1')
 					total += divisor;
 				divisor /= 2;
 			}
@@ -50,42 +50,42 @@ namespace Binary_Float {
 			sw.Start();
 			for (int i = 0; i < iterations; i++) {
 				print_float("100.0011");
-            }
+			}
 			sw.Stop();
 			Console.WriteLine("{0}", sw.ElapsedTicks);
 			sw.Reset();
 			sw.Start();
 			for (int i = 0; i < iterations; i++) {
 				ConvertString_One("100.0011");
-            }
+			}
 			sw.Stop();
 			Console.WriteLine("One {0}", sw.ElapsedTicks);
 			sw.Reset();
 			sw.Start();
 			for (int i = 0; i < iterations; i++) {
 				ConvertString_Two("100.0011");
-            }
+			}
 			sw.Stop();
 			Console.WriteLine("Two {0}", sw.ElapsedTicks);
 			sw.Reset();
 			sw.Start();
 			for (int i = 0; i < iterations; i++) {
 				ConvertString_Three("100.0011");
-            }
+			}
 			sw.Stop();
 			Console.WriteLine("Three {0}", sw.ElapsedTicks);
 			sw.Reset();
 			sw.Start();
 			for (int i = 0; i < iterations; i++) {
 				ConvertString_Four("100.0011");
-            }
+			}
 			sw.Stop();
 			Console.WriteLine("Four {0}", sw.ElapsedTicks);
 			sw.Reset();
 			sw.Start();
 			for (int i = 0; i < iterations; i++) {
 				ConvertString_Five("100.0011");
-            }
+			}
 			sw.Stop();
 			Console.WriteLine("Five {0}", sw.ElapsedTicks);
 			sw.Reset();
