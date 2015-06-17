@@ -1,0 +1,18 @@
+public static uint GCD(uint[] numbers)
+{
+    // Return greatest common divisor for all numbers in the provided array.
+}
+
+Sample data <collection, gcd>:
+Dictionary<uint[], uint> collections = new Dictionary<uint[], uint>();
+collections.Add(new uint[] { 10, 15, 15 }, 5);
+collections.Add(new uint[] { 141, 752, 235 }, 47);
+collections.Add(new uint[] { 9638, 4758, 10248, 5490 }, 122);
+collections.Add(new uint[] { 25, 525 }, 25);
+collections.Add(new uint[] { 60032, 181888, 555520, 386176 }, 896);
+collections.Add(new uint[] { 1540, 1364, 1628 }, 44);
+collections.Add(new uint[] { 1088376, 1733589 }, 1347);
+collections.Add(new uint[] { 46733280, 7398270, 57472140, 5308215 }, 8745);
+collections.Add(new uint[] { 230000, 3033700, 5099100 }, 2300);
+collections.Add(new uint[] { 29108200, 8454710, 8543590, 21114555 }, 5555);
+collections.Add(new uint[] { 6873, 44556, 17775 }, 237);

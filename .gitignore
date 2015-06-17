@@ -1,0 +1,11 @@
+obj
+bin
+packages
+*.srf
+*.suo
+*.cache
+*.lnk
+*.user
+*.csproj.user
+*.e2e
+*.log
